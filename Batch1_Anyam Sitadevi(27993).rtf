@@ -1,0 +1,169 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil Consolas;}{\f2\fnil\fcharset0 Consolas;}}
+{\colortbl ;\red127\green0\blue85;\red0\green0\blue0;\red106\green62\blue62;\red0\green0\blue192;\red42\green0\blue255;\red240\green216\blue168;\red212\green212\blue212;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9\tab\tab\tab\tab\tab\tab\tab\tab        Batch 1 Assignment\par
+\tab\tab\tab\tab\tab\tab\tab\tab        Anyam Sitadevi\par
+\tab\tab\tab\tab\tab\tab\tab\tab       Employee id:27993\par
+\par
+//First Progaram Answer\par
+\cf1\b\f1\fs20 import\cf2\b0  java.util.Scanner;\cf0\par
+\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  ArrayTest \{\cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3 children\cf2 =0;\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3 adult\cf2 =0;\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3\ul seniorCitizen\cf2\ulnone =0;\cf0\par
+\cf2\tab\tab\cf1\b int\cf2\b0  \cf3 age\cf2 []=\cf1\b new\cf2\b0  \cf1\b int\cf2\b0 [10];\cf0\par
+\cf2\tab\tab Scanner \cf3\ul sc\cf2\ulnone =\cf1\b new\cf2\b0  Scanner(System.\cf4\b\i in\cf2\b0\i0 );\cf0\par
+\cf2\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println(\cf5 "Enter the elements:"\cf2 );\cf0\par
+\cf2\tab\tab\cf1\b for\cf2\b0 (\cf1\b int\cf2\b0  \cf3 i\cf2 =0;\cf3 i\cf2 <\cf3 age\cf2 .\cf4 length\cf2 ;\cf3 i\cf2 ++)\cf0\par
+\cf2\tab\tab\{\cf0\par
+\cf2\tab\tab\tab\cf3 age\cf2 [\cf3 i\cf2 ]=\cf3 sc\cf2 .nextInt();\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\tab\cf1\b for\cf2\b0 (\cf1\b int\cf2\b0  \cf3 i\cf2 =0;\cf3 i\cf2 <\cf3 age\cf2 .\cf4 length\cf2 ;\cf3 i\cf2 ++)\cf0\par
+\cf2\tab\tab\{\cf0\par
+\cf2\tab\tab\tab\cf1\b if\cf2\b0 (\cf3 age\cf2 [\cf3 i\cf2 ]<18)\cf0\par
+\cf2\tab\tab\tab\{\cf0\par
+\cf2\tab\tab\tab\tab\cf3 age\cf2 [\cf3 i\cf2 ]=\cf3 sc\cf2 .nextInt();\cf0\par
+\cf2\tab\tab\tab\tab\cf3 children\cf2 ++;\cf0\par
+\cf2\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\tab\cf1\b else\cf2\b0  \cf1\b if\cf2\b0 (\cf3 age\cf2 [\cf3 i\cf2 ]>=18 && \cf3 age\cf2 [\cf3 i\cf2 ]<=54)\cf0\par
+\cf2\tab\tab\tab\{\cf0\par
+\cf2\tab\tab\tab\tab\cf3 adult\cf2 ++;\cf0\par
+\cf2\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\tab\cf1\b else\cf2\b0  \cf1\b if\cf2\b0 (\cf3 age\cf2 [\cf3 i\cf2 ]>=55)\cf0\par
+\cf2\tab\tab\tab\{\cf0\par
+\cf2\tab\tab\tab\tab\cf3 seniorCitizen\cf2 ++;\cf0\par
+\cf2\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println(\cf5 "Children:"\cf2 +\cf3 children\cf2 );\cf0\par
+\cf2\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println(\cf5 "Adult:"\cf2 +\cf3 adult\cf2 );\cf0\par
+\cf2\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println(\cf5 "senior citizen:"\cf2 +\cf3 children\cf2 );\cf0\par
+\par
+\cf2\tab\}\par
+\par
+\cf1\b\f2\lang1033 //Second program Answer\f1\lang9\par
+\par
+package\cf2\b0  test;\cf0\par
+\par
+\cf1\b class\cf2\b0  Employee\{\cf0\par
+\cf2\tab String \cf4 FirstName\cf2 ;\cf0\par
+\cf2\tab String \cf4 LastName\cf2 ;\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  Employee(String \cf3 firstName\cf2 , String \cf3 lastName\cf2 ) \{\cf0\par
+\cf2\tab\tab\cf1\b super\cf2\b0 ();\cf0\par
+\cf2\tab\tab\cf4 FirstName\cf2  = \cf3 firstName\cf2 ;\cf0\par
+\cf2\tab\tab\cf4 LastName\cf2  = \cf3 lastName\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b public\cf2\b0  String toString() \{\cf0\par
+\cf2\tab\tab\cf1\b return\cf2\b0  \cf5 "Employee [FirstName="\cf2  + \cf4 FirstName\cf2  + \cf5 ", LastName="\cf2  + \cf4 LastName\cf2  + \cf5 "]"\cf2 ;\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf0\par
+\cf2\}\cf0\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  TestEmployee \{\cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 )\cf0\par
+\cf2\tab\{\cf0\par
+\cf2\tab\tab Employee \cf3 e\cf2 =\cf1\b new\cf2\b0  Employee(\cf5 "sita"\cf2 ,\cf5 "devi"\cf2 );\cf0\par
+\cf2\tab\tab Employee \cf3 e1\cf2 =\cf1\b new\cf2\b0  Employee(\cf5 "radha"\cf2 ,\cf5 "rani"\cf2 );\cf0\par
+\cf2\tab\tab Employee \cf3\highlight6 e2\cf2\highlight0 =\cf1\b new\cf2\b0  Employee(\cf5 "ragu"\cf2 ,\cf5 "ram"\cf2 );\cf0\par
+\cf2\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println(\cf3 e\cf2 .\cf4 FirstName\cf2 );\cf0\par
+\cf2\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println(\cf3 e\cf2 .\cf4 LastName\cf2 );\cf0\par
+\cf2\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println(\cf3 e1\cf2 .\cf4 FirstName\cf2 );\cf0\par
+\cf2\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println(\cf3 e1\cf2 .\cf4 LastName\cf2 );\cf0\par
+\cf2\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println(\cf3\highlight7 e2\cf2\highlight0 .\cf4 FirstName\cf2 );\cf0\par
+\cf2\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println(\cf3\highlight7 e2\cf2\highlight0 .\cf4 LastName\cf2 );\cf0\par
+\cf2\tab\tab\cf0\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\}\par
+\f2\lang1033\par
+//Third program Answer\f1\lang9\par
+\cf1\b class\cf2\b0  Employee2\cf0\par
+\cf2\{\cf0\par
+\cf2\tab\cf0\par
+\cf2\tab\tab\cf1\b private\cf2\b0  String \cf4 firstName\cf2 ;\cf0\par
+\cf2\tab\tab\cf1\b private\cf2\b0  String \cf4 lastName\cf2 ;\cf0\par
+\cf2\tab\tab\cf1\b public\cf2\b0  Employee2(String \cf3 firstName\cf2 , String \cf3 lastName\cf2 )\cf0\par
+\cf2\tab\tab\{\cf0\par
+\cf2\tab\tab\tab\cf1\b super\cf2\b0 ();\cf0\par
+\cf2\tab\tab\tab\cf3\ul firstName\cf2  = \cf3 firstName\cf2\ulnone ;\cf0\par
+\cf2\tab\tab\tab\cf3\ul lastName\cf2  = \cf3 lastName\cf2\ulnone ;\cf0\par
+\cf2\tab\tab\tab\cf1\b if\cf2\b0 (\cf3 firstName\cf2 ==\cf1\b null\cf2\b0  && \cf3 lastName\cf2 ==\cf1\b null\cf2\b0 )\cf0\par
+\cf2\tab\tab\tab\{\cf0\par
+\cf2\tab\tab\tab\tab\cf1\b throw\cf2\b0  \cf1\b new\cf2\b0  NullPointerException(\cf5 "Entry Missing"\cf2 );\cf0\par
+\cf2\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\tab\cf1\b else\cf2\b0  \cf1\b if\cf2\b0 (\cf3 firstName\cf2 .length()<3 && \cf3 lastName\cf2 .length()<3)\cf0\par
+\cf2\tab\tab\tab\{\cf0\par
+\cf2\tab\tab\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println(\cf5 "Name should be minimum three characters"\cf2 );\cf0\par
+\cf2\tab\tab\tab\}\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\tab\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String \cf3 args\cf2 [])\cf0\par
+\cf2\tab\tab\{\cf0\par
+\cf2\tab\tab\tab Employee2  \cf3 e\cf2 =\cf1\b new\cf2\b0  Employee2(\cf5 ""\cf2 ,\cf5 ""\cf2 );\cf0\par
+\cf2\tab\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println(\cf3 e\cf2 .\cf4 firstName\cf2 );\cf0\par
+\cf2\tab\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println(\cf3 e\cf2 .\cf4 lastName\cf2 );\cf0\par
+\cf2\tab\tab\tab\cf0\par
+\cf2\tab\tab\}\cf0\par
+\cf2\}\cf0\par
+\f0\fs22\par
+\cf2\f1\fs20\par
+\par
+\par
+\par
+\cf0\f0\fs22\par
+//Fourth Program Answer\par
+\par
+\cf1\b\f1\fs20 class\cf2\b0  Animal\cf0\par
+\cf2\{\cf0\par
+\cf2\tab Animal() \{\cf0\par
+\cf2\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println(\cf5 "Animal shout"\cf2 );\tab\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b void\cf2\b0  shout() \{\cf0\par
+\cf2\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println(\cf5 "shout"\cf2 );\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\}\cf0\par
+\cf1\b class\cf2\b0  Dog \cf1\b extends\cf2\b0  Animal\{\cf0\par
+\cf2\tab Dog() \{\cf0\par
+\cf2\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println(\cf5 "Dog shout"\cf2 );\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b void\cf2\b0  shout() \{\cf0\par
+\cf2\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println(\cf5 "bow bow"\cf2 );\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\}\cf0\par
+\cf1\b class\cf2\b0  Horse \cf1\b extends\cf2\b0  Animal \{\cf0\par
+\cf2\tab Horse() \{\cf0\par
+\cf2\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println(\cf5 "Horse shouts"\cf2 );\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b void\cf2\b0  shout() \{\cf0\par
+\cf2\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println(\cf5 "neigh neigh"\cf2 );\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\}\cf0\par
+\cf1\b class\cf2\b0  Cat \cf1\b extends\cf2\b0  Animal \{\cf0\par
+\cf2\tab Cat() \{\cf0\par
+\cf2\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println(\cf5 "Cat shouts"\cf2 );\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\tab\cf1\b void\cf2\b0  shout() \{\cf0\par
+\cf2\tab\tab System.\cf4\b\i out\cf2\b0\i0 .println(\cf5 "meow meow"\cf2 );\cf0\par
+\cf2\tab\}\cf0\par
+\cf2\}\cf0\par
+\cf1\b public\cf2\b0  \cf1\b class\cf2\b0  PolymorphismTest \{\cf0\par
+\par
+\cf2\tab\cf1\b public\cf2\b0  \cf1\b static\cf2\b0  \cf1\b void\cf2\b0  main(String[] \cf3 args\cf2 ) \{\cf0\par
+\cf2\tab\tab Animal \cf3 a\cf2  = \cf1\b new\cf2\b0  Animal();\cf0\par
+\cf2\tab\tab\cf3 a\cf2 .shout();\cf0\par
+\cf2\tab\tab Dog \cf3 d\cf2  = \cf1\b new\cf2\b0  Dog();\cf0\par
+\cf2\tab\tab\cf3 d\cf2 .shout();\cf0\par
+\cf2\tab\tab Horse \cf3 h\cf2  = \cf1\b new\cf2\b0  Horse();\cf0\par
+\cf2\tab\tab\cf3 h\cf2 .shout();\cf0\par
+\cf2\tab\tab Cat \cf3 c\cf2  = \cf1\b new\cf2\b0  Cat();\cf0\par
+\cf2\tab\tab\cf3 c\cf2 .shout();\cf0\par
+\par
+\cf2\tab\}\cf0\par
+\par
+\cf2\}\cf0\par
+\f0\fs22\par
+\cf2\f1\fs20\tab\tab\tab\cf0\f0\fs22\par
+\cf1\b\f1\fs20\par
+}
+ 
